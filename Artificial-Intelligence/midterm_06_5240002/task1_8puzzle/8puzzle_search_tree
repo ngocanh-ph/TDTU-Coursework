@@ -1,0 +1,62 @@
+digraph {
+	node [shape=ellipse]
+	N0 [label="1 8 2
+_ 4 3
+7 6 5"]
+	N1 [label="_ 8 2
+1 4 3
+7 6 5"]
+	N0 -> N1 [label=UP]
+	N2 [label="1 8 2
+7 4 3
+_ 6 5"]
+	N0 -> N2 [label=DOWN]
+	N3 [label="1 8 2
+4 _ 3
+7 6 5"]
+	N0 -> N3 [label=RIGHT]
+	N4 [label="1 8 _
+2 4 3
+7 6 5"]
+	N0 -> N4 [label="L-shaped"]
+	N5 [label="1 8 2
+5 4 3
+7 6 _"]
+	N0 -> N5 [label="L-shaped"]
+	N6 [label="8 1 2
+_ 4 3
+7 6 5"]
+	N0 -> N6 [label="Divisible Swap Right"]
+	N7 [label="1 2 8
+_ 4 3
+7 6 5"]
+	N0 -> N7 [label="Divisible Swap Right"]
+	N8 [label="1 4 2
+_ 8 3
+7 6 5"]
+	N0 -> N8 [label="Divisible Swap Down"]
+	N9 [label="1 8 2
+3 4 _
+7 6 5"]
+	N0 -> N9 [label="Jump Over"]
+	N10 [label="8 _ 2
+1 4 3
+7 6 5"]
+	N1 -> N10 [label=RIGHT]
+	N11 [label="3 8 2
+1 4 _
+7 6 5"]
+	N1 -> N11 [label="L-shaped"]
+	N12 [label="6 8 2
+1 4 3
+7 _ 5"]
+	N1 -> N12 [label="L-shaped"]
+	N13 [label="_ 2 8
+1 4 3
+7 6 5"]
+	N1 -> N13 [label="Divisible Swap Right"]
+	N14 [label="_ 4 2
+1 8 3
+7 6 5"]
+	N1 -> N14 [label="Divisible Swap Down"]
+}
